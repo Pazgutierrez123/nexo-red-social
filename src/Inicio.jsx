@@ -56,7 +56,7 @@ function Post({ post, onUpdate }) {
       </header>
       <p className="post-text">{post.contenido}</p>
       <div className="hashtags">{post.hashtags.map((h) => <span key={h}><IconHash size={12} />{h}</span>)}</div>
-      {post.reaccion && <div className="reaccion-info"><IconCheck size={14} /> Reaccionaste: {post.reaccion}. Sin contadores públicos: solo el autor ve el impacto.</div>}
+      {post.reaccion && <div className="reaccion-info"><IconCheck size={14} /> Reaccionaste: {post.reaccion}</div>}
       <div className="actions">
         <div className="react-wrap">
           <button className={post.reaccion ? 'on' : ''} onClick={() => setMenu(!menu)}><IconHeart /> {post.reaccion || 'Reaccionar'}</button>
@@ -117,7 +117,7 @@ export function RutaVisual({ ruta, empresa }) {
             <Avatar id={id} size={36} />
             <span>{id === 'sofia' ? 'Tú' : USERS[id].nombre.split(' ')[0]}</span>
           </div>
-          {i < ruta.length - 1 && <div className="ruta-edge"><small>conoce a</small><IconArrow size={14} /></div>}
+          {i < ruta.length - 1 && <div className="ruta-edge"><small>amigos</small><IconArrow size={14} /></div>}
         </div>
       ))}
       <div className="ruta-step">
@@ -147,7 +147,6 @@ export default function Inicio({ comunidades, toggleComunidad }) {
           <h3>{ME.nombre}</h3>
           <p className="muted">{ME.carrera} · {ME.universidad}</p>
           <p className="small">{ME.bio}</p>
-          <div className="no-metrics"><IconLock size={12} /> Perfil sin métricas públicas de popularidad</div>
         </div>
         <div className="card">
           <h4>Mis intereses</h4>
@@ -172,11 +171,11 @@ export default function Inicio({ comunidades, toggleComunidad }) {
       <aside className="col-right">
         <div className="card highlight">
           <h4>Ruta de mentoría sugerida</h4>
-          <p className="small muted">Te interesa <b>Mercado Libre</b>. Alguien de tu red puede presentarte:</p>
+          <p className="small muted">Te interesa <b>Mercado Libre</b>. Esta es la mejor forma de llegar:</p>
           {ruta && <RutaVisual ruta={ruta} empresa="Mercado Libre" />}
           <p className="small">Conoce a <b>Ana</b>, quien estudia tu carrera y es amiga de <b>Carlos</b>, Data Engineer en Mercado Libre.</p>
           <button className={`btn ${solicitado ? 'done' : 'primary'} full`} onClick={() => setSolicitado(true)}>
-            {solicitado ? <><IconCheck size={15} /> Presentación solicitada</> : 'Solicitar presentación'}
+            {solicitado ? <><IconCheck size={15} /> Mentoría solicitada</> : 'Solicitar mentoría'}
           </button>
         </div>
 

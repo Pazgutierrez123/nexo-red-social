@@ -2,10 +2,9 @@ import { useState } from 'react'
 import { COMUNIDADES } from './data'
 import Inicio from './Inicio'
 import { Comunidades, Mentoria } from './Secciones'
-import ComoFunciona from './ComoFunciona'
 import Search from './Search'
 
-const TABS = ['Inicio', 'Comunidades', 'Mentoría', 'Cómo funciona']
+const TABS = ['Inicio', 'Comunidades', 'Mentoría']
 
 function Logo() {
   return (
@@ -42,7 +41,6 @@ export default function App() {
       {tab === 'Inicio' && <Inicio comunidades={comunidades} toggleComunidad={toggleComunidad} />}
       {tab === 'Comunidades' && <Comunidades comunidades={comunidades} toggleComunidad={toggleComunidad} />}
       {tab === 'Mentoría' && <Mentoria />}
-      {tab === 'Cómo funciona' && <ComoFunciona ir={ir} />}
     </>
   )
 }

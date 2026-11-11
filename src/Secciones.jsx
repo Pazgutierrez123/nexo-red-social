@@ -8,8 +8,8 @@ export function Comunidades({ comunidades, toggleComunidad }) {
     <div className="page">
       <div className="page-head">
         <span className="eyebrow">Círculos de interés</span>
-        <h2>Comunidades curadas y de participación limitada</h2>
-        <p className="muted">Cada círculo tiene un cupo máximo para favorecer la interacción de calidad sobre el volumen.</p>
+        <h2>Tus círculos</h2>
+        <p className="muted">Cada círculo tiene un cupo máximo para cuidar la conversación.</p>
       </div>
       <div className="grid3">
         {comunidades.map((c) => {
@@ -40,9 +40,8 @@ export function Mentoria() {
   return (
     <div className="page">
       <div className="page-head">
-        <span className="eyebrow">Mentoría</span>
-        <h2>Encuentra a tu mentor</h2>
-        <p className="muted">Elige la empresa donde te gustaría trabajar y te mostramos quién de tu red puede presentarte con alguien de allí.</p>
+        <h2>Encuentra tu mentor</h2>
+        <p className="muted">Elige la empresa que te interesa y te mostramos la mejor forma de llegar a alguien que trabaje allí.</p>
       </div>
 
       <div className="card">
@@ -59,8 +58,9 @@ export function Mentoria() {
               })}
               <li><b>{USERS[ruta[ruta.length - 1]].nombre}</b> trabaja en <b>{empresa}</b> y puede ser tu mentor/a.</li>
             </ol>
+            <p className="small muted">Están a {ruta.length - 1} {ruta.length - 1 === 1 ? 'conexión' : 'conexiones'} de distancia.</p>
           </>
-        ) : <p className="muted">Todavía nadie de tu red conoce a alguien en esta empresa.</p>}
+        ) : <p className="muted">Todavía no encontramos una conexión con esta empresa.</p>}
       </div>
 
       <h3 className="sub">Mentores disponibles</h3>

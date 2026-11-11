@@ -51,7 +51,6 @@ function PerfilModal({ id, onClose }) {
           ? <>Amigos en común: <b>{enComun.map((x) => USERS[x].nombre).join(', ')}</b></>
           : 'No tienen amigos en común todavía.'}
       </p>
-      <p className="small muted">Nexo no muestra seguidores ni métricas de popularidad en los perfiles.</p>
       {d !== 1 && (
         <button className={`btn full ${conectado ? 'done' : 'primary'}`} onClick={() => setConectado(true)}>
           {conectado ? <><IconCheck size={15} /> Solicitud enviada</> : 'Conectar'}
