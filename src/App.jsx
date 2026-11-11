@@ -10,8 +10,8 @@ function Logo() {
   return (
     <div className="logo">
       <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
-        <rect width="32" height="32" rx="8" fill="#1a1a1a" />
-        <circle cx="10" cy="11" r="3" fill="#fff" /><circle cx="22" cy="11" r="3" fill="#a5a6ff" /><circle cx="16" cy="22" r="3" fill="#fff" />
+        <rect width="32" height="32" rx="8" fill="#1a252f" />
+        <circle cx="10" cy="11" r="3" fill="#fff" /><circle cx="22" cy="11" r="3" fill="#9fb0bd" /><circle cx="16" cy="22" r="3" fill="#fff" />
         <path d="M10 11 16 22 22 11" stroke="#fff" strokeWidth="1.6" fill="none" />
       </svg>
       <span>Nexo</span>

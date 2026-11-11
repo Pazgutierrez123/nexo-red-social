@@ -13,16 +13,16 @@ export const ME = {
 }
 
 export const USERS = {
-  sofia: { nombre: 'Sofía Ramírez', rol: 'Ing. en Sistemas', org: 'Universidad del Norte', color: '#5b5bd6' },
-  ana: { nombre: 'Ana Torres', rol: 'Ing. en Sistemas', org: 'Universidad del Norte', color: '#e5484d' },
-  carlos: { nombre: 'Carlos Méndez', rol: 'Data Engineer', org: 'Mercado Libre', color: '#12a594' },
-  lucia: { nombre: 'Lucía Fernández', rol: 'Diseño UX', org: 'Universidad de Palermo', color: '#f76b15' },
-  martin: { nombre: 'Martín Gómez', rol: 'Backend Developer', org: 'Globant', color: '#0090ff' },
-  valen: { nombre: 'Valentina Ruiz', rol: 'Lic. en Datos', org: 'Universidad del Norte', color: '#d6409f' },
-  diego: { nombre: 'Diego Paredes', rol: 'ML Engineer', org: 'Google', color: '#8e4ec6' },
-  julia: { nombre: 'Julia Sosa', rol: 'Product Manager', org: 'Accenture', color: '#30a46c' },
-  tomas: { nombre: 'Tomás Herrera', rol: 'Ing. Industrial', org: 'Universidad Tecnológica', color: '#ab6400' },
-  camila: { nombre: 'Camila Ortiz', rol: 'Cloud Architect', org: 'Amazon Web Services', color: '#e54666' },
+  sofia: { nombre: 'Sofía Ramírez', rol: 'Ing. en Sistemas', org: 'Universidad del Norte', color: '#2c3e50' },
+  ana: { nombre: 'Ana Torres', rol: 'Ing. en Sistemas', org: 'Universidad del Norte', color: '#3d5163' },
+  carlos: { nombre: 'Carlos Méndez', rol: 'Data Engineer', org: 'Mercado Libre', color: '#4e6274' },
+  lucia: { nombre: 'Lucía Fernández', rol: 'Diseño UX', org: 'Universidad de Palermo', color: '#5a6e7e' },
+  martin: { nombre: 'Martín Gómez', rol: 'Backend Developer', org: 'Globant', color: '#354858' },
+  valen: { nombre: 'Valentina Ruiz', rol: 'Lic. en Datos', org: 'Universidad del Norte', color: '#45596a' },
+  diego: { nombre: 'Diego Paredes', rol: 'ML Engineer', org: 'Google', color: '#64788a' },
+  julia: { nombre: 'Julia Sosa', rol: 'Product Manager', org: 'Accenture', color: '#52677a' },
+  tomas: { nombre: 'Tomás Herrera', rol: 'Ing. Industrial', org: 'Universidad Tecnológica', color: '#485c6d' },
+  camila: { nombre: 'Camila Ortiz', rol: 'Cloud Architect', org: 'Amazon Web Services', color: '#6b7f8e' },
 }
 
 // Grafo AMIGO_DE (bidireccional) para calcular rutas de mentoría con BFS
