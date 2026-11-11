@@ -59,12 +59,8 @@ export function Mentoria() {
               })}
               <li><b>{USERS[ruta[ruta.length - 1]].nombre}</b> trabaja en <b>{empresa}</b> y puede ser tu mentor/a.</li>
             </ol>
-            <p className="small muted">Distancia en el grafo: {ruta.length - 1} {ruta.length - 1 === 1 ? 'salto' : 'saltos'}. Calculado con búsqueda en anchura (BFS), equivalente a <code>shortestPath</code> en Cypher.</p>
           </>
         ) : <p className="muted">No hay una ruta de hasta 5 saltos hacia esta empresa.</p>}
-        <pre className="code">{`MATCH (a:Usuario {idUsuario: $idA}), (e:Empresa {nombre: "${empresa}"})
-MATCH p = shortestPath((a)-[:AMIGO_DE*1..5]-(m:Usuario)-[:TRABAJA_EN]->(e))
-RETURN p`}</pre>
       </div>
 
       <h3 className="sub">Mentores disponibles</h3>
