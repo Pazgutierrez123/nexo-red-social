@@ -42,7 +42,7 @@ export default function App() {
       {tab === 'Inicio' && <Inicio comunidades={comunidades} toggleComunidad={toggleComunidad} />}
       {tab === 'Comunidades' && <Comunidades comunidades={comunidades} toggleComunidad={toggleComunidad} />}
       {tab === 'Mentoría' && <Mentoria />}
-      {tab === 'Cómo funciona' && <ComoFunciona />}
+      {tab === 'Cómo funciona' && <ComoFunciona ir={ir} />}
     </>
   )
 }

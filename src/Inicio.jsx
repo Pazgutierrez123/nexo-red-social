@@ -117,11 +117,11 @@ export function RutaVisual({ ruta, empresa }) {
             <Avatar id={id} size={36} />
             <span>{id === 'sofia' ? 'Tú' : USERS[id].nombre.split(' ')[0]}</span>
           </div>
-          {i < ruta.length - 1 && <div className="ruta-edge"><small>AMIGO_DE</small><IconArrow size={14} /></div>}
+          {i < ruta.length - 1 && <div className="ruta-edge"><small>conoce a</small><IconArrow size={14} /></div>}
         </div>
       ))}
       <div className="ruta-step">
-        <div className="ruta-edge"><small>TRABAJA_EN</small><IconArrow size={14} /></div>
+        <div className="ruta-edge"><small>trabaja en</small><IconArrow size={14} /></div>
         <div className="ruta-node empresa"><div className="emp-box">{empresa.split(' ').map((w) => w[0]).join('').slice(0, 2)}</div><span>{empresa}</span></div>
       </div>
     </div>
@@ -172,7 +172,7 @@ export default function Inicio({ comunidades, toggleComunidad }) {
       <aside className="col-right">
         <div className="card highlight">
           <h4>Ruta de mentoría sugerida</h4>
-          <p className="small muted">Te interesa <b>Mercado Libre</b>. El grafo encontró este camino:</p>
+          <p className="small muted">Te interesa <b>Mercado Libre</b>. Alguien de tu red puede presentarte:</p>
           {ruta && <RutaVisual ruta={ruta} empresa="Mercado Libre" />}
           <p className="small">Conoce a <b>Ana</b>, quien estudia tu carrera y es amiga de <b>Carlos</b>, Data Engineer en Mercado Libre.</p>
           <button className={`btn ${solicitado ? 'done' : 'primary'} full`} onClick={() => setSolicitado(true)}>

@@ -9,7 +9,7 @@ export function Comunidades({ comunidades, toggleComunidad }) {
       <div className="page-head">
         <span className="eyebrow">Círculos de interés</span>
         <h2>Comunidades curadas y de participación limitada</h2>
-        <p className="muted">Cada círculo tiene un cupo máximo para favorecer la interacción de calidad sobre el volumen. Relación en el grafo: <code>(Usuario)-[:PERTENECE_A]-&gt;(Comunidad)</code>.</p>
+        <p className="muted">Cada círculo tiene un cupo máximo para favorecer la interacción de calidad sobre el volumen.</p>
       </div>
       <div className="grid3">
         {comunidades.map((c) => {
@@ -40,9 +40,9 @@ export function Mentoria() {
   return (
     <div className="page">
       <div className="page-head">
-        <span className="eyebrow">Diferenciador de Nexo</span>
-        <h2>Mentoría integrada con rutas explicables</h2>
-        <p className="muted">Elige la empresa que te interesa. Nexo recorre el grafo de conexiones y calcula el camino más corto hasta alguien que trabaja allí, explicando cada salto.</p>
+        <span className="eyebrow">Mentoría</span>
+        <h2>Encuentra a tu mentor</h2>
+        <p className="muted">Elige la empresa donde te gustaría trabajar y te mostramos quién de tu red puede presentarte con alguien de allí.</p>
       </div>
 
       <div className="card">
@@ -60,7 +60,7 @@ export function Mentoria() {
               <li><b>{USERS[ruta[ruta.length - 1]].nombre}</b> trabaja en <b>{empresa}</b> y puede ser tu mentor/a.</li>
             </ol>
           </>
-        ) : <p className="muted">No hay una ruta de hasta 5 saltos hacia esta empresa.</p>}
+        ) : <p className="muted">Todavía nadie de tu red conoce a alguien en esta empresa.</p>}
       </div>
 
       <h3 className="sub">Mentores disponibles</h3>
@@ -75,7 +75,6 @@ export function Mentoria() {
           </div>
         ))}
       </div>
-      <p className="small muted">Regla de negocio RB-9: un usuario no puede ser mentor y aprendiz de la misma persona en la misma área simultáneamente.</p>
     </div>
   )
 }

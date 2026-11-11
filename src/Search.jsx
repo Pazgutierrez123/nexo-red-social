@@ -57,7 +57,7 @@ function PerfilModal({ id, onClose }) {
           {conectado ? <><IconCheck size={15} /> Solicitud enviada</> : 'Conectar'}
         </button>
       )}
-      {d === 1 && <div className="btn full done"><IconCheck size={15} /> Ya son amigos (AMIGO_DE)</div>}
+      {d === 1 && <div className="btn full done"><IconCheck size={15} /> Ya son amigos</div>}
     </Modal>
   )
 }
